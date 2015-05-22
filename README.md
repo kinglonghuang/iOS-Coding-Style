@@ -232,5 +232,6 @@ iOS编码规范
 
 ##示例代码
 
- ![KLFoo.h](Resource/KLFoo.h)
- ![KLFoo.h](Resource/KLFoo.h)
+ [KLFoo.h](Resource/KLFoo.h)
+ 
+ [KLFoo.h](Resource/KLFoo.h)
