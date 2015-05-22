@@ -232,5 +232,5 @@ iOS编码规范
 
 ##示例代码
 
-    [http://10.10.5.46/DVBOTT/CBB/Release/Documents/iOS%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/1.3/IDFFoo.h IDFFoo.h]
-    [http://10.10.5.46/DVBOTT/CBB/Release/Documents/iOS%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/1.3/IDFFoo.m IDFFoo.m]
+ ![KLFoo.h](Resource/KLFoo.h)
+ ![KLFoo.h](Resource/KLFoo.h)
