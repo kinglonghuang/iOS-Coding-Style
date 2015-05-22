@@ -18,7 +18,7 @@
 
 @property (nonatomic, retain) NSString          	* foo;
 @property (nonatomic, retain) NSString          	* bar;
-@property (nonatomic, assign) id <FooDelegate>      delegate;
+@property (nonatomic, assign) id <FooDelegate>          delegate;
 
 + (id)fooWithString:(NSString *)string;
 
