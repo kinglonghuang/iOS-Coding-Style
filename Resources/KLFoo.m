@@ -16,11 +16,12 @@
     return _foo;
 }
 
-- (void)setFoo:(NSString *)newFoo {
-    if (_foo != newFoo) {
-        [_foo release];
-        _foo = [newFoo retain];
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        return self;
     }
+    return nil;
 }
 
 - (void)dealloc {
@@ -31,16 +32,23 @@
     [super dealloc];
 }
 
+#pragma mark - Private
+
+- (NSString *)foolName {
+    //...
+    return @"KLStudio";
+}
+
 #pragma mark - Public
 
-+ (id)fooWithString:(NSString *)string {
++ (instancetype)fooWithString:(NSString *)string {
     return [[[self alloc] initWithString:string] autorelease];
 }
 
-- (id)initWithString:(NSString *)string {
+- (instancetype)initWithString:(NSString *)string {
     self = [super init];
     if (self) {
-        self.foo = string;
+        self.foo = [self foolName];
         self.bar = [[[NSString alloc] initWithFormat:@"hi %d", 3] autorelease];
         return self;
     }
@@ -48,6 +56,7 @@
 }
 
 - (BOOL)doWorkWithString:(NSString *)blah {
+    //...
     return YES;
 }
 

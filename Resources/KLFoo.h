@@ -9,20 +9,20 @@
 #import <Foundation/Foundation.h>
 
 @protocol FooDelegate;
-@class IDFDocument;
+@class KLDocument;
 
 @interface KLFoo : NSObject {
-    NSString        * _foo;
-    NSString        * _bar;
+    NSString        *_foo;
+    NSString        *_bar;
 }
 
-@property (nonatomic, retain) NSString          	* foo;
-@property (nonatomic, retain) NSString          	* bar;
-@property (nonatomic, assign) id <FooDelegate>          delegate;
+@property (nonatomic, retain) NSString *foo;
+@property (nonatomic, retain) NSString *bar;
+@property (nonatomic, assign) id <FooDelegate> delegate;
 
-+ (id)fooWithString:(NSString *)string;
++ (instancetype)fooWithString:(NSString *)string;
 
-- (id)initWithString:(NSString *)string;
+- (instancetype)initWithString:(NSString *)string;
 
 - (BOOL)doWorkWithString:(NSString *)blah;
 
@@ -30,9 +30,9 @@
 
 @protocol FooDelegate <NSObject>
 
-- (void)iDFFooAskForReloadData:(IDFFoo *)foo;
+- (void)KLFooAskForReloadData:(IDFFoo *)foo;
 
-- (void)iDFFoo:(IDFFoo *)foo
+- (void)KLFoo:(KLFoo *)foo
         requestDidFinishedWithData:(NSData *)data
          error:(NSError *)error;
 
