@@ -4,13 +4,13 @@ iOS编码规范
 ##代码命名<br>
 #####Objective C的代码需要有良好的自解释性，清晰的命名和文档结构，少量的注释。<br>
 
-![](File:IOS 01.png)
+![](Resources/iOS_CS_1.png)
 图1.1 代码简短清晰的同时要保证语意的清晰<br/>
 
-![](File:IOS 2.png)
+![](Resources/iOS_CS_2.png)
 图1.2 大多数时候使用全拼而不是缩写，即使他们很长<br/>
 
-![](File:IOS 3.png)
+![](Resources/iOS_CS_3.png)
 图1.3 避免产生歧义的命名
 
 ##变量命名
@@ -45,7 +45,7 @@ iOS编码规范
     #define DeviceManagerDidFinishLoadingNotification  @"DeviceManagerDidFinishLoadingNotification"
 
 
-#1.1.6 enums的枚举变量首写字母大写，枚举变量带上枚举名字作为前缀，名字必须有意义,之后是下划线，最后是参数名,枚举数值等号对齐
+####1.1.6 enums的枚举变量首写字母大写，枚举变量带上枚举名字作为前缀，名字必须有意义,之后是下划线，最后是参数名,枚举数值等号对齐
 
     typedef NS_ENUM(NSInteger, IDFMood) {
        happyMood = 0,
@@ -208,30 +208,6 @@ iOS编码规范
       ...  
     }  
     @end
-
-####1.3.8 Block
-* 如果block 可以一行写完，就不要换行；
- [operation setCompletionBlock:^{ [self onOperationDone]; }];
-
-* 如果block必须换行，那么最后的’}];’必须与’[’对齐；
- [operation setCompletionBlock:^{ [self.delegate newDataAvailable];}];
-
-* Block中的代码必须缩进4个空格；
-
-
-    dispatch_async(_fileIOQueue, ^{
-        NSString* path = [self sessionFilePath];
-        if (path) {
-            // ...
-        }
-    });
-
-* 超过20行的block建议将block定义成变量。
-
-
-    void (^largeBlock)(void) = ^{
-         // ...
-    };
 
 ##约定
 ####1.4.1 除非有不能删除的说明，注释的代码块在可用的模块中不应该出现
