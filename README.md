@@ -46,7 +46,10 @@ iOS编码规范
 <br />
 类命名
 -
-3.1 类名可使用简短的前缀，比如：项目名缩写，公司名缩写 (立项时，团队成员可共同拟定)
+3.1 类名首字母大写,后续首字母大写
+	homepageViewController (不合适，首字母需要大写)
+	VSDevice （合适）
+3.2 类名可使用简短的前缀，比如：项目名缩写，公司名缩写 (立项时，团队成员可共同拟定)
 
 	KLMyClass (合适， 前缀使用了KLStudio的前两个字母) 
 	VSHomePageViewController (合适，VS是项目名称缩写)
@@ -56,12 +59,12 @@ iOS编码规范
 -
 4.1 类文件名称所有首字母大写，命名需要和它所实现的类的名字相同，同时需要体现出它的角色，比如控制器需要添加ViewController后缀，视图一般情况需要有View后缀（模型类不需要添加Model作为后缀）
 
-	HomePage	 		(不合适，从名字不能看出它是一个控制器还是一个视图)
+	HomePage	 	(不合适，从名字不能看出它是一个控制器还是一个视图)
 	HomePageViewController (合适，它是一个控制器角色)
 	HomePageView 		(合适，它是一个视图角色)
 	homePageViewController	(不合适，所有首字母需要大写)
 	STBDeviceModel 		(不合适，它本身代表一个设备，不需要多余的“Model”后缀)
-	STBDevice 			(合适，它是一个模型角色)
+	STBDevice 		(合适，它是一个模型角色)
 
 4.2 类别的文件名应该使用“类别名+类别功能说明”
 
@@ -70,7 +73,7 @@ iOS编码规范
 <br />	
 其他
 -
-5.1 #define的宏作为key时(NSDictionary,NSUserDefault, NSCoding)，前面加"k"关键字；其他宏采用首字母大写，通知需要添加Notification后缀
+5.1 #define的宏作为key时(NSDictionary,NSUserDefault,NSCoding)，前面加"k"关键字；其他宏采用首字母大写，通知需要添加Notification后缀
 
 	#define kUserName  @"UserName" (作为字典,NSUserDefault,NSCoding的key)
  	#define CanvasView_Tag 		10001
