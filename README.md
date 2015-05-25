@@ -9,19 +9,16 @@ iOS编码规范
 
 	DosomethingWithParam: (不合适，首字母要小写，之后要使用首字母大写)
 	doSomethingWithParam: (合适)
-	
+
+1.2 简短清晰的同时要保证语意的清晰	
 ![](Resources/iOS_CS_1.png)
 
-图1.1.1 简短清晰的同时要保证语意的清晰
-
+1.3 大多数时候使用全拼而不是缩写，即使他们很长
 ![](Resources/iOS_CS_2.png)
 
-图1.1.2 大多数时候使用全拼而不是缩写，即使他们很长
-
+1.4 避免产生歧义的命名
 ![](Resources/iOS_CS_3.png)
 
-图1.1.3 避免产生歧义的命名
-	
 <br />
 变量命名
 -
