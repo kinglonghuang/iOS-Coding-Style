@@ -269,6 +269,19 @@ iOS编码规范
 
 7.2 一个函数只做一件事，一个函数的实现不超过一屏
 
+7.3 if 条件判断推荐使用 if (true) 写法
+
+	推荐写法：
+	if (true) {
+	   //Do something...
+	}
+	
+	不推荐写法：
+	if (false) {
+	   return;
+	}
+	//Do something...
+
 <br />
 版权与作者
 -
