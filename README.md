@@ -295,4 +295,4 @@ iOS编码规范
 
 [KLFoo.h](Resources/KLFoo.h)
 
-[KLFoo.h](Resources/KLFoo.h)
+[KLFoo.m](Resources/KLFoo.m)
