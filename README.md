@@ -11,12 +11,15 @@ iOS编码规范
 	doSomethingWithParam: (合适)
 
 1.2 简短清晰的同时要保证语意的清晰	
+
 ![](Resources/iOS_CS_1.png)
 
 1.3 大多数时候使用全拼而不是缩写，即使他们很长
+
 ![](Resources/iOS_CS_2.png)
 
 1.4 避免产生歧义的命名
+
 ![](Resources/iOS_CS_3.png)
 
 <br />
@@ -29,7 +32,7 @@ iOS编码规范
 	NSString *VarName;: (不合适，首字母要小写，之后要使用首字母大写)
 	NSString *userName; (合适)
 	
-2.2 成员变量使用“_”作为前缀，临时变量不需要“_”前缀
+2.2 成员变量使用"\_"作为前缀，临时变量不需要"_"前缀
 
 	NSString *varName; (当作为成员变量时，不合适，应使用“_”作为前缀)
 	NSString *varName; (当作为临时变量时，合适，不需要“_”作为前缀)
@@ -70,7 +73,7 @@ iOS编码规范
 	NSString+Utils.h 	(为NSString添加了一些工具方法的集合)
 	NSString+MD5.h		(为NSString添加了MD5支持)
 <br />	
-其他
+宏，枚举，UI控件命名
 -
 5.1 #define的宏作为key时(NSDictionary,NSUserDefault,NSCoding)，前面加"k"关键字；其他宏采用首字母大写，通知需要添加Notification后缀
 
@@ -104,12 +107,12 @@ iOS编码规范
 		KLMood_Mad   = 3
 	}KLMood; (合适)
 
-5.3 界面控件采用 “功能＋控件名”的命名方式，且控件名使用完整拼写，举例如下：
+5.3 使用整形表示某种状态或类型时，需要采用枚举值；使用常量字符串需要在特定文件或实现文件的统一位置声明，也可以采用宏定义的方式声明常量字符串，避免代码出现“魔数”“魔字符串”
+
+5.4 界面控件采用 “功能＋控件名”的命名方式，且控件名使用完整拼写，举例如下：
 
 	registerButton
 	nameLabel
-
-5.4 使用整形表示某种状态或类型时，需要采用枚举值；使用常量字符串需要在特定文件或实现文件的统一位置声明，也可以采用宏定义的方式声明常量字符串，避免代码出现“魔数”“魔字符串”
 
 <br />
 空格和对齐
@@ -138,7 +141,6 @@ iOS编码规范
 	@property (nonatomic, retain) NSString *foo;
 	@property (nonatomic, assign) id<FooDelegate> delegate;
 
-	+ (id)fooWithString:(NSString *)string;
 	+ (id)fooWithString:(NSString *)string;
 
 	//initialization
