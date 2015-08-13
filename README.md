@@ -142,7 +142,6 @@ iOS编码规范
 	@property (nonatomic, assign) id<FooDelegate> delegate;
 
 	+ (id)fooWithString:(NSString *)string;
-
 	//initialization
 	+ (id)init;
 	//init with a string
